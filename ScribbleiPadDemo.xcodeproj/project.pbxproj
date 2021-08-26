@@ -11,6 +11,10 @@
 		08EDAD3626D7A97E00AAC475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDAD3526D7A97E00AAC475 /* ContentView.swift */; };
 		08EDAD3826D7A97F00AAC475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EDAD3726D7A97F00AAC475 /* Assets.xcassets */; };
 		08EDAD3B26D7A97F00AAC475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08EDAD3A26D7A97F00AAC475 /* Preview Assets.xcassets */; };
+		08EDAD4226D7AB5300AAC475 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDAD4126D7AB5300AAC475 /* CustomTextField.swift */; };
+		08EDAD4426D7B28B00AAC475 /* UICustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDAD4326D7B28B00AAC475 /* UICustomTextField.swift */; };
+		08EDAD4626D7B2BB00AAC475 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDAD4526D7B2BB00AAC475 /* CustomView.swift */; };
+		08EDAD4826D7B30F00AAC475 /* UICustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDAD4726D7B30F00AAC475 /* UICustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		08EDAD3526D7A97E00AAC475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08EDAD3726D7A97F00AAC475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08EDAD3A26D7A97F00AAC475 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08EDAD4126D7AB5300AAC475 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		08EDAD4326D7B28B00AAC475 /* UICustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomTextField.swift; sourceTree = "<group>"; };
+		08EDAD4526D7B2BB00AAC475 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		08EDAD4726D7B30F00AAC475 /* UICustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 				08EDAD3526D7A97E00AAC475 /* ContentView.swift */,
 				08EDAD3726D7A97F00AAC475 /* Assets.xcassets */,
 				08EDAD3926D7A97F00AAC475 /* Preview Content */,
+				08EDAD4126D7AB5300AAC475 /* CustomTextField.swift */,
+				08EDAD4326D7B28B00AAC475 /* UICustomTextField.swift */,
+				08EDAD4526D7B2BB00AAC475 /* CustomView.swift */,
+				08EDAD4726D7B30F00AAC475 /* UICustomView.swift */,
 			);
 			path = ScribbleiPadDemo;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08EDAD4626D7B2BB00AAC475 /* CustomView.swift in Sources */,
+				08EDAD4426D7B28B00AAC475 /* UICustomTextField.swift in Sources */,
 				08EDAD3626D7A97E00AAC475 /* ContentView.swift in Sources */,
+				08EDAD4826D7B30F00AAC475 /* UICustomView.swift in Sources */,
 				08EDAD3426D7A97E00AAC475 /* ScribbleiPadDemoApp.swift in Sources */,
+				08EDAD4226D7AB5300AAC475 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
