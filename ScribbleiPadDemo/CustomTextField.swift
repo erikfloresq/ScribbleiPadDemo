@@ -9,19 +9,23 @@ import SwiftUI
 
 struct CustomTextField: UIViewRepresentable {
     typealias UIViewType = UICustomTextField
-    let placeholder: String
+    let textField: UICustomTextField
+
+    init(textField: UICustomTextField) {
+        self.textField = textField
+    }
 
     func makeUIView(context: Context) -> UICustomTextField {
-        UICustomTextField(customPlaceholder: placeholder)
+        return textField
     }
 
     func updateUIView(_ uiView: UICustomTextField, context: Context) {
 
     }
 }
-
-struct CustomTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomTextField(placeholder: "Add input for CustomTextField")
-    }
-}
+//
+//struct CustomTextField_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CustomTextField()
+//    }
+//}

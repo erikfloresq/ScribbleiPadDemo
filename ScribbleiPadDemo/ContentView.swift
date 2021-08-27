@@ -9,17 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State var inputText: String = ""
+    let textField = UICustomTextField(customPlaceholder: "Add CustomTextField")
 
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            CustomTextField(placeholder: "Add your demo text in CustomTextField")
+                CustomTextField(textField: textField)
                 .frame(height: 60)
                 .border(.gray, width: 1)
             TextField("Add your demo text in TextField", text: $inputText)
                 .multilineTextAlignment(.center)
                 .frame(height: 60)
                 .border(.gray, width: 1)
-            CustomView()
+            CustomView(customTextField: textField)
                 .border(.gray, width: 1)
         }.padding()
 

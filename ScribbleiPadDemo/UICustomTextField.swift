@@ -17,6 +17,7 @@ class UICustomTextField: UITextField {
         placeholder = customPlaceholder
         scribbleInteraction = UIScribbleInteraction(delegate: self)
         addInteraction(scribbleInteraction)
+        accessibilityIdentifier = "CustomTextIdentifier"
     }
 
     required init?(coder: NSCoder) {

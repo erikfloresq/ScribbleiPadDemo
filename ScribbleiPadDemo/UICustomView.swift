@@ -8,11 +8,13 @@
 import UIKit
 
 class UICustomView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    var customTextField: UITextField?
+
+    init(customTextField: UITextField?) {
+        super.init(frame: .zero)
+        self.customTextField = customTextField
         let indirectScribbleInteraction = UIIndirectScribbleInteraction(delegate: self)
         addInteraction(indirectScribbleInteraction)
-
     }
 
     required init?(coder: NSCoder) {
@@ -22,7 +24,10 @@ class UICustomView: UIView {
 
 extension UICustomView: UIIndirectScribbleInteractionDelegate {
     func indirectScribbleInteraction(_ interaction: UIInteraction, focusElementIfNeeded elementIdentifier: String, referencePoint focusReferencePoint: CGPoint, completion: @escaping ((UIResponder & UITextInput)?) -> Void) {
-
+        if customTextField != nil {
+            customTextField?.becomeFirstResponder()
+            completion(customTextField)
+        }
     }
 
     func indirectScribbleInteraction(_ interaction: UIInteraction, frameForElement elementIdentifier: String) -> CGRect {
@@ -30,7 +35,7 @@ extension UICustomView: UIIndirectScribbleInteractionDelegate {
     }
 
     func indirectScribbleInteraction(_ interaction: UIInteraction, requestElementsIn rect: CGRect, completion: @escaping ([String]) -> Void) {
-
+        completion(["CustomTextIdentifier"])
     }
 
     func indirectScribbleInteraction(_ interaction: UIInteraction, isElementFocused elementIdentifier: String) -> Bool {
